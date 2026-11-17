@@ -35,3 +35,7 @@ Test
 
 Created by: Tyler
 Version: 0.1.0
+
+## Safety of setup scripts
+
+`Setup.ps1` is deliberately **non-destructive**: it checks Go and downloads only normal module dependencies. It does not install Go, edit PATH/GOPATH, or reinitialize `go.mod`. The old script did all three. `RunProject.bat` now runs the checker and launches `hello.go` only after prerequisites pass. Install Go separately with `winget install --id GoLang.Go --exact`, and reopen PowerShell before running the checker.
