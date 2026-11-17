@@ -253,46 +253,6 @@ h1 {
     margin-bottom: 20px;
     text-align: center;
 }`
-)	htmlTemplate = `<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{{ .Name }}</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <div class="container">
-        <h1>{{ .Name }}</h1>
-        <p>{{ .Description }}</p>
-    </div>
-    <script src="main.js"></script>
-</body>
-</html>`
-
-	cssTemplate = `* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-body {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
-    padding: 20px;
-}
-
-.container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 20px;
-}
-
-h1 {
-    color: #333;
-    margin-bottom: 20px;
-    text-align: center;
-}`
 )
 
 var languageConfigs = map[string]struct {
